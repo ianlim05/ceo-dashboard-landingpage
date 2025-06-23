@@ -15,7 +15,8 @@ const Index = () => {
           title: "Daily Journal",
           description: "Record your thoughts and reflections with guided prompts",
           icon: "📖",
-          status: "Action needed!"
+          status: "Action needed!",
+          image: "/lovable-uploads/c08b17cd-7ce9-4102-8321-84fc34f9d927.png"
         },
         {
           title: "Weekly Rhythms",
@@ -88,17 +89,20 @@ const Index = () => {
         {
           title: "Future Me",
           description: "Send letters to your future self for reflection",
-          icon: "💌"
+          icon: "💌",
+          image: "/lovable-uploads/baf8af56-148e-4718-8b87-ac12d14255c2.png"
         },
         {
           title: "Ikigai",
           description: "Discover your life's purpose by exploring your passions",
-          icon: "🎌"
+          icon: "🎌",
+          image: "/lovable-uploads/d580a47d-4d49-4b9e-a986-b98ee8c00fe1.png"
         },
         {
           title: "Dreamboard",
           description: "Create a visual dream board with drawings, text and images",
-          icon: "🎨"
+          icon: "🎨",
+          image: "/lovable-uploads/8faad639-b6e9-4e6b-b065-ae3afb7fc11c.png"
         }
       ]
     }
@@ -139,7 +143,7 @@ const Index = () => {
             <span className="text-xl font-bold text-slate-800">CEO Dashboard</span>
           </div>
           <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
-            Start Free Trial
+            Get Started
           </Button>
         </div>
       </header>
@@ -160,7 +164,7 @@ const Index = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
             <Button size="lg" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-lg px-8 py-6">
-              Start Free Trial
+              Get Started
             </Button>
             <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-2">
               View Demo
@@ -231,7 +235,16 @@ const Index = () => {
                 </div>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {category.items.map((module, moduleIndex) => (
-                    <Card key={moduleIndex} className={`${category.color} border-2 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 cursor-pointer`}>
+                    <Card key={moduleIndex} className={`${category.color} border-2 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 cursor-pointer overflow-hidden`}>
+                      {module.image && (
+                        <div className="w-full h-48 overflow-hidden">
+                          <img 
+                            src={module.image} 
+                            alt={module.title}
+                            className="w-full h-full object-cover object-top"
+                          />
+                        </div>
+                      )}
                       <CardHeader className="pb-3">
                         <div className="flex items-center justify-between">
                           <div className="flex items-center space-x-3">
@@ -294,7 +307,7 @@ const Index = () => {
                   <span>Regular updates</span>
                 </div>
                 <Button className="w-full mt-6" variant="outline">
-                  Start Monthly Plan
+                  Get Started Monthly
                 </Button>
               </CardContent>
             </Card>
@@ -336,7 +349,7 @@ const Index = () => {
                   <span className="font-medium">Priority support</span>
                 </div>
                 <Button className="w-full mt-6 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
-                  Start Annual Plan
+                  Get Started Annual
                 </Button>
               </CardContent>
             </Card>
@@ -354,7 +367,7 @@ const Index = () => {
             Join thousands of leaders who have already optimized their productivity and growth
           </p>
           <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50 text-lg px-8 py-6">
-            Start Your Free Trial Today
+            Get Started Today
           </Button>
         </div>
       </section>
