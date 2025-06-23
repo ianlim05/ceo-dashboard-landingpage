@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -90,7 +89,7 @@ const Index = () => {
           image: "/lovable-uploads/df8ca2d4-fe64-4cb9-934a-450465dc55a0.png"
         },
         {
-          title: "Five Percent Revolution",
+          title: "Five Percent Reviews",
           description: "Track and review your progress with 5% improvements",
           icon: "📈"
         },
