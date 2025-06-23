@@ -16,19 +16,21 @@ const Index = () => {
           description: "Record your thoughts and reflections with guided prompts",
           icon: "📖",
           status: "Action needed!",
-          image: "/lovable-uploads/c08b17cd-7ce9-4102-8321-84fc34f9d927.png"
+          image: "/lovable-uploads/dd66e310-1234-4022-807e-18e10bc10648.png"
         },
         {
           title: "Weekly Rhythms",
           description: "Plan and review your weekly priorities and activities",
           icon: "📅",
-          status: "Action needed!"
+          status: "Action needed!",
+          image: "/lovable-uploads/5c0dac7a-5923-49c7-a0bd-e07dd04fbaa2.png"
         },
         {
           title: "Habit Tracker",
           description: "Track your daily habits and build consistency",
           icon: "🎯",
-          status: "Action needed!"
+          status: "Action needed!",
+          image: "/lovable-uploads/23fd5075-7b72-425c-aac6-b71df3ea3084.png"
         }
       ]
     },
@@ -40,17 +42,20 @@ const Index = () => {
         {
           title: "To-do List",
           description: "A simple and easy-to-use to-do list, like a piece of paper",
-          icon: "✅"
+          icon: "✅",
+          image: "/lovable-uploads/12c4a881-63aa-41c5-a05b-d821af1a9933.png"
         },
         {
           title: "Weekly Design System",
           description: "Plan and track your weekly activities with a structured approach",
-          icon: "🎨"
+          icon: "🎨",
+          image: "/lovable-uploads/3a2018ae-7481-40b1-b803-a04f451afc21.png"
         },
         {
           title: "Project Management",
           description: "Organize and track your projects from start to finish",
-          icon: "📊"
+          icon: "📊",
+          image: "/lovable-uploads/46b6a71e-3c5e-4163-9cfb-0caf859b9303.png"
         }
       ]
     },
@@ -62,12 +67,14 @@ const Index = () => {
         {
           title: "Personal Finance",
           description: "Track income, expenses, and manage your budget",
-          icon: "💰"
+          icon: "💰",
+          image: "/lovable-uploads/9d71aa1f-e6ad-4192-960b-6b4755538d44.png"
         },
         {
           title: "Bucket List",
           description: "Create and manage your life goals and dreams",
-          icon: "🌟"
+          icon: "🌟",
+          image: "/lovable-uploads/715d2a0f-3c3b-4f0b-9e2a-c2404d8f413b.png"
         }
       ]
     },
@@ -79,7 +86,8 @@ const Index = () => {
         {
           title: "Manifestation",
           description: "Set intentions and track your manifestation practices",
-          icon: "✨"
+          icon: "✨",
+          image: "/lovable-uploads/df8ca2d4-fe64-4cb9-934a-450465dc55a0.png"
         },
         {
           title: "Five Percent Revolution",
