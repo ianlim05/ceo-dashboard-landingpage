@@ -91,7 +91,8 @@ const Index = () => {
         {
           title: "Five Percent Reviews",
           description: "Track and review your progress with 5% improvements",
-          icon: "📈"
+          icon: "📈",
+          image: "/lovable-uploads/813a0439-b67e-45e1-a13e-7a34bab15fdb.png"
         },
         {
           title: "Future Me",
