@@ -1,6 +1,8 @@
+
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
 import { CheckCircle, Calendar, TrendingUp, Target, DollarSign, Heart, Brain, BarChart3, Users, Star } from "lucide-react";
 
 const Index = () => {
@@ -14,22 +16,22 @@ const Index = () => {
           title: "Daily Journal",
           description: "Record your thoughts and reflections with guided prompts",
           icon: "📖",
-          status: "Action needed!",
-          image: "/lovable-uploads/dd66e310-1234-4022-807e-18e10bc10648.png"
+          image: "/lovable-uploads/dd66e310-1234-4022-807e-18e10bc10648.png",
+          detailedDescription: "Transform your daily reflections with our guided journal system. Features include daily prompts, mood tracking, gratitude sections, and progress insights. Perfect for building self-awareness and maintaining mental clarity."
         },
         {
           title: "Weekly Rhythms",
           description: "Plan and review your weekly priorities and activities",
           icon: "📅",
-          status: "Action needed!",
-          image: "/lovable-uploads/5c0dac7a-5923-49c7-a0bd-e07dd04fbaa2.png"
+          image: "/lovable-uploads/5c0dac7a-5923-49c7-a0bd-e07dd04fbaa2.png",
+          detailedDescription: "Structure your week for maximum effectiveness. Set weekly intentions, track priorities, review accomplishments, and plan ahead. Includes templates for different life areas and reflection prompts."
         },
         {
           title: "Habit Tracker",
           description: "Track your daily habits and build consistency",
           icon: "🎯",
-          status: "Action needed!",
-          image: "/lovable-uploads/23fd5075-7b72-425c-aac6-b71df3ea3084.png"
+          image: "/lovable-uploads/23fd5075-7b72-425c-aac6-b71df3ea3084.png",
+          detailedDescription: "Build lasting habits with our visual tracking system. Monitor streaks, set reminders, analyze patterns, and celebrate milestones. Supports both positive habits and breaking negative ones."
         }
       ]
     },
@@ -42,19 +44,22 @@ const Index = () => {
           title: "To-do List",
           description: "A simple and easy-to-use to-do list, like a piece of paper",
           icon: "✅",
-          image: "/lovable-uploads/12c4a881-63aa-41c5-a05b-d821af1a9933.png"
+          image: "/lovable-uploads/12c4a881-63aa-41c5-a05b-d821af1a9933.png",
+          detailedDescription: "Experience the simplicity of paper with digital convenience. Create tasks, set priorities, organize by categories, and track completion. Clean, distraction-free interface that keeps you focused."
         },
         {
           title: "Weekly Design System",
           description: "Plan and track your weekly activities with a structured approach",
           icon: "🎨",
-          image: "/lovable-uploads/3a2018ae-7481-40b1-b803-a04f451afc21.png"
+          image: "/lovable-uploads/3a2018ae-7481-40b1-b803-a04f451afc21.png",
+          detailedDescription: "Design your perfect week with visual planning tools. Balance work, personal time, and goals using our structured templates. Includes time blocking, energy management, and weekly reviews."
         },
         {
           title: "Project Management",
           description: "Organize and track your projects from start to finish",
           icon: "📊",
-          image: "/lovable-uploads/46b6a71e-3c5e-4163-9cfb-0caf859b9303.png"
+          image: "/lovable-uploads/46b6a71e-3c5e-4163-9cfb-0caf859b9303.png",
+          detailedDescription: "Manage projects with clarity and control. Create milestones, track progress, assign tasks, and visualize timelines. Perfect for both personal projects and team collaboration."
         }
       ]
     },
@@ -67,13 +72,15 @@ const Index = () => {
           title: "Personal Finance",
           description: "Track income, expenses, and manage your budget",
           icon: "💰",
-          image: "/lovable-uploads/9d71aa1f-e6ad-4192-960b-6b4755538d44.png"
+          image: "/lovable-uploads/9d71aa1f-e6ad-4192-960b-6b4755538d44.png",
+          detailedDescription: "Take control of your financial future. Track income and expenses, create budgets, monitor investments, and set financial goals. Includes spending analysis and savings recommendations."
         },
         {
           title: "Bucket List",
           description: "Create and manage your life goals and dreams",
           icon: "🌟",
-          image: "/lovable-uploads/715d2a0f-3c3b-4f0b-9e2a-c2404d8f413b.png"
+          image: "/lovable-uploads/715d2a0f-3c3b-4f0b-9e2a-c2404d8f413b.png",
+          detailedDescription: "Turn dreams into reality with structured goal planning. Organize aspirations by categories, set timelines, track progress, and celebrate achievements. Includes inspiration and planning tools."
         }
       ]
     },
@@ -86,31 +93,36 @@ const Index = () => {
           title: "Manifestation",
           description: "Set intentions and track your manifestation practices",
           icon: "✨",
-          image: "/lovable-uploads/df8ca2d4-fe64-4cb9-934a-450465dc55a0.png"
+          image: "/lovable-uploads/df8ca2d4-fe64-4cb9-934a-450465dc55a0.png",
+          detailedDescription: "Harness the power of intention setting and manifestation. Create vision boards, practice gratitude, set affirmations, and track synchronicities. Includes guided exercises and progress tracking."
         },
         {
           title: "Five Percent Reviews",
           description: "Track and review your progress with 5% improvements",
           icon: "📈",
-          image: "/lovable-uploads/813a0439-b67e-45e1-a13e-7a34bab15fdb.png"
+          image: "/lovable-uploads/813a0439-b67e-45e1-a13e-7a34bab15fdb.png",
+          detailedDescription: "Achieve remarkable growth through small, consistent improvements. Track daily 5% gains, identify patterns, celebrate progress, and build momentum. Based on the compound effect principle."
         },
         {
           title: "Future Me",
           description: "Send letters to your future self for reflection",
           icon: "💌",
-          image: "/lovable-uploads/baf8af56-148e-4718-8b87-ac12d14255c2.png"
+          image: "/lovable-uploads/baf8af56-148e-4718-8b87-ac12d14255c2.png",
+          detailedDescription: "Connect with your future self through time-delayed messages. Write letters, set delivery dates, reflect on past messages, and track personal evolution. A powerful tool for self-awareness and growth."
         },
         {
           title: "Ikigai",
           description: "Discover your life's purpose by exploring your passions",
           icon: "🎌",
-          image: "/lovable-uploads/d580a47d-4d49-4b9e-a986-b98ee8c00fe1.png"
+          image: "/lovable-uploads/d580a47d-4d49-4b9e-a986-b98ee8c00fe1.png",
+          detailedDescription: "Find your reason for being through the Japanese concept of Ikigai. Explore what you love, what you're good at, what the world needs, and what you can be paid for. Includes guided exercises and reflection tools."
         },
         {
           title: "Dreamboard",
           description: "Create a visual dream board with drawings, text and images",
           icon: "🎨",
-          image: "/lovable-uploads/8faad639-b6e9-4e6b-b065-ae3afb7fc11c.png"
+          image: "/lovable-uploads/8faad639-b6e9-4e6b-b065-ae3afb7fc11c.png",
+          detailedDescription: "Visualize your dreams and goals with our creative dreamboard tool. Combine images, drawings, text, and colors to create inspiring visual representations of your aspirations. Includes templates and sharing options."
         }
       ]
     }
@@ -243,35 +255,59 @@ const Index = () => {
                 </div>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                   {category.items.map((module, moduleIndex) => (
-                    <Card key={moduleIndex} className={`${category.color} border-2 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 cursor-pointer overflow-hidden`}>
-                      {module.image && (
-                        <div className="w-full h-48 overflow-hidden">
-                          <img 
-                            src={module.image} 
-                            alt={module.title}
-                            className="w-full h-full object-cover object-top"
-                          />
-                        </div>
-                      )}
-                      <CardHeader className="pb-3">
-                        <div className="flex items-center justify-between">
-                          <div className="flex items-center space-x-3">
-                            <span className="text-2xl">{module.icon}</span>
-                            <CardTitle className="text-lg">{module.title}</CardTitle>
-                          </div>
-                          {module.status && (
-                            <Badge variant="secondary" className="text-xs bg-orange-100 text-orange-700">
-                              {module.status}
-                            </Badge>
+                    <Dialog key={moduleIndex}>
+                      <DialogTrigger asChild>
+                        <Card className={`${category.color} border-2 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 cursor-pointer overflow-hidden`}>
+                          {module.image && (
+                            <div className="w-full h-48 overflow-hidden">
+                              <img 
+                                src={module.image} 
+                                alt={module.title}
+                                className="w-full h-full object-cover object-top"
+                              />
+                            </div>
                           )}
+                          <CardHeader className="pb-3">
+                            <div className="flex items-center justify-between">
+                              <div className="flex items-center space-x-3">
+                                <span className="text-2xl">{module.icon}</span>
+                                <CardTitle className="text-lg">{module.title}</CardTitle>
+                              </div>
+                            </div>
+                          </CardHeader>
+                          <CardContent>
+                            <CardDescription className="text-slate-600">
+                              {module.description}
+                            </CardDescription>
+                          </CardContent>
+                        </Card>
+                      </DialogTrigger>
+                      <DialogContent className="max-w-2xl">
+                        <DialogHeader>
+                          <DialogTitle className="flex items-center space-x-3 text-2xl">
+                            <span className="text-3xl">{module.icon}</span>
+                            <span>{module.title}</span>
+                          </DialogTitle>
+                        </DialogHeader>
+                        {module.image && (
+                          <div className="w-full h-64 overflow-hidden rounded-lg mb-4">
+                            <img 
+                              src={module.image} 
+                              alt={module.title}
+                              className="w-full h-full object-cover object-top"
+                            />
+                          </div>
+                        )}
+                        <DialogDescription className="text-base leading-relaxed text-slate-700">
+                          {module.detailedDescription}
+                        </DialogDescription>
+                        <div className="flex justify-end mt-6">
+                          <Button className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700">
+                            Get Started with {module.title}
+                          </Button>
                         </div>
-                      </CardHeader>
-                      <CardContent>
-                        <CardDescription className="text-slate-600">
-                          {module.description}
-                        </CardDescription>
-                      </CardContent>
-                    </Card>
+                      </DialogContent>
+                    </Dialog>
                   ))}
                 </div>
               </div>
