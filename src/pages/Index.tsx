@@ -161,7 +161,6 @@ const Index = () => {
           
           {/* Dashboard Preview */}
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-t from-white via-transparent to-transparent z-10 pointer-events-none"></div>
             <img src="/lovable-uploads/b965cb91-4d0d-48e6-a4b1-449d44acf5cb.png" alt="CEO Dashboard Interface" className="w-full max-w-4xl mx-auto rounded-2xl shadow-2xl border border-slate-200 object-fill" />
           </div>
         </div>
